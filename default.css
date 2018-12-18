@@ -1,18 +1,44 @@
 body{
     margin: 0;
+    padding: 0;
+
 }
 
-.document{
-    position: fixed;
-    height: 80%;
+#document{
+    display: inline-block;
+    height: 100vh;
     width: 100%;
     border: 1px solid black;
 }
-.tool-panel{
+#tool-panel{
+    display: flex;
     position: fixed;
     top: 80%;
     height: 20%;
     width: 100%;
     background: #bbbbbb;
+}
+#tool-panel .panel-insert{
+    width: 50%;
+    height: 100%;
+    padding: 8px;
     border: 1px solid black;
+}
+#tool-panel .panel-insert .buttons{
+    display: flex;
+}
+#tool-panel .panel-insert .buttons .set{
+    padding: 6px;
+}
+#tool-panel .panel-insert .buttons .set button{
+    margin: 4px;
+}
+#tool-panel .panel-edit{
+    width: 50%;
+    height: 100%;
+    padding: 8px;
+    border: 1px solid black;
+}
+.float-r{
+    float: right;
 }

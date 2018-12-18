@@ -7,12 +7,40 @@
     <link rel="stylesheet" href="default.css">
 </head>
 <body>
-    <div id="app">
-        <div class="document">
+    <div id="document">
 
+    </div>
+    <div id="tool-panel">
+        <div class="panel-insert">
+            <strong>Inserir</strong>
+            <button type="button"  onclick="selectThis(virtualDocument)" class="float-r">Deselecionar</button>
+            <button type="button" onclick="deleteThis(selectedElement)" class="float-r">Deletar</button><br>
+            <div class="buttons">
+                <div class="set">
+                    <button type="button" onclick="insertDiv(selectedElement)">div</button><br>
+                    <button type="button" onclick="insertSpan(selectedElement)">span</button><br>
+                    
+                    <button type="button" onclick="insertButton(selectedElement)">button</button>
+                </div>
+                <div class="set">
+                    <button type="button" onclick="insertHeader(selectedElement)">Título</button> 
+                    <select name="selectHeader" id="selectHeader">
+                        <option value="h1">h1</option>
+                        <option value="h2">h2</option>
+                        <option value="h3">h3</option>
+                        <option value="h4">h4</option>
+                        <option value="h5">h5</option>
+                        <option value="h6">h6</option>
+                    </select><br>
+                    <button type="button" onclick="insertP(selectedElement)">Parágrafo</button><br>
+                    <button type="button" onclick="insertLink(selectedElement)">Hiperlink</button><br>
+                </div>
+            </div>
+            
         </div>
-        <div class="tool-panel">
-            Painel
+        <div class="panel-edit">
+            <strong>Propriedades</strong><br>
+
         </div>
     </div>
     <script src="elfnamic.js"></script>
