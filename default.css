@@ -18,26 +18,21 @@ body{
     width: 100%;
     background: #bbbbbb;
 }
-#tool-panel .panel-insert{
+#tool-panel .panel-content{
     width: 50%;
     height: 100%;
     padding: 8px;
     border: 1px solid black;
+    overflow: scroll;
 }
-#tool-panel .panel-insert .buttons{
+#tool-panel .panel-content .buttons{
     display: flex;
 }
-#tool-panel .panel-insert .buttons .set{
+#tool-panel .panel-content .buttons .set{
     padding: 6px;
 }
-#tool-panel .panel-insert .buttons .set button{
+#tool-panel .panel-content .buttons .set button{
     margin: 4px;
-}
-#tool-panel .panel-edit{
-    width: 50%;
-    height: 100%;
-    padding: 8px;
-    border: 1px solid black;
 }
 .float-r{
     float: right;

@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <link rel="stylesheet" href="default.css">
 </head>
 <body>
@@ -11,7 +10,7 @@
 
     </div>
     <div id="tool-panel">
-        <div class="panel-insert">
+        <div class="panel-content">
             <strong>Inserir</strong>
             <button type="button"  onclick="selectThis(virtualDocument)" class="float-r">Deselecionar</button>
             <button type="button" onclick="deleteThis(selectedElement)" class="float-r">Deletar</button><br>
@@ -38,9 +37,29 @@
             </div>
             
         </div>
-        <div class="panel-edit">
+        <div class="panel-content">
             <strong>Propriedades</strong><br>
-
+            <div class="buttons">
+                <div class="set">
+                    display: 
+                    <select id="propDisplay">
+                        <option>auto</option>
+                        <option>block</option>
+                        <option>inline</option>
+                        <option>inline-block</option>
+                    </select><br>
+                    color: <input type="text" size="12" id="propColor"><br>
+                    background: <input type="text" size="12" id="propBkg"><br>
+                </div>
+                <div class="set">
+                    margin: <input type="text" size="24" id="propMargin"><br>
+                    border: <input type="text" size="24" id="propBorder"><br>
+                    padding: <input type="text" size="24" id="propPadding"><br>
+                </div>
+                <button type="button" onclick="aplicarEstilo()">Aplicar</button>
+            </div>
+            
+            
         </div>
     </div>
     <script src="elfnamic.js"></script>
